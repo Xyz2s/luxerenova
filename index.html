@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxerenova — Roofing, Engineered</title>
+<meta name="description" content="Luxerenova designs and installs roofing systems built to load calculations, not guesswork. Shingle, standing-seam metal, slate, and low-slope membrane, engineered and installed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<div class="mobile-bar">
+  <a href="#home" class="mobile-logo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 21V9L12 3L21 9V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V13H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>LUXERENOVA</span>
+  </a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<!-- Side navigation -->
+<aside class="side-nav" id="sideNav">
+  <div class="side-nav-top">
+    <a href="#home" class="brand">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 21V9L12 3L21 9V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V13H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-text">LUXERENOVA</span>
+    </a>
+    <p class="brand-tag">Roofing, engineered.</p>
+  </div>
+
+  <nav class="side-nav-links" aria-label="Section navigation">
+    <a href="#home" class="nav-link" data-target="home"><span class="nav-index">A-00</span>Home</a>
+    <a href="#capabilities" class="nav-link" data-target="capabilities"><span class="nav-index">A-10</span>Capabilities</a>
+    <a href="#specs" class="nav-link" data-target="specs"><span class="nav-index">A-20</span>Specs</a>
+    <a href="#sequence" class="nav-link" data-target="sequence"><span class="nav-index">A-30</span>Build Sequence</a>
+    <a href="#projects" class="nav-link" data-target="projects"><span class="nav-index">A-40</span>Projects</a>
+    <a href="#reviews" class="nav-link" data-target="reviews"><span class="nav-index">A-50</span>Field Notes</a>
+    <a href="#contact" class="nav-link" data-target="contact"><span class="nav-index">A-60</span>Contact</a>
+  </nav>
+
+  <div class="side-nav-bottom">
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>Crews dispatched today: <strong>4</strong></span>
+    </div>
+    <a href="tel:+15557482465" class="side-phone">(555) 748-2465</a>
+    <a href="#contact" class="btn btn-orange btn-block">Request Spec Review</a>
+  </div>
+</aside>
+
+<div class="nav-scrim" id="navScrim"></div>
+
+<!-- Main content -->
+<main class="main">
+
+  <!-- HOME / HERO -->
+  <section class="section hero" id="home">
+    <div class="blueprint-grid" aria-hidden="true"></div>
+    <div class="section-inner hero-inner">
+      <div class="hero-copy">
+        <p class="sheet-label">SHEET A-00 — COVER</p>
+        <h1>Every roof starts as<br><span class="hero-em">a load calculation</span><br>not a guess.</h1>
+        <p class="hero-sub">Luxerenova engineers roofing systems around pitch, wind exposure, and deck condition first — then installs shingle, metal, slate, or membrane to match. Licensed, insured, and rated for 130 mph uplift.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-orange btn-lg">Request a Spec Review</a>
+          <a href="tel:+15557482465" class="btn btn-line btn-lg">Call (555) 748-2465</a>
+        </div>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 460 380" class="diagram-svg" id="diagramSvg">
+          <!-- dimension baseline -->
+          <line x1="40" y1="330" x2="420" y2="330" class="dim-line draw" style="--len:380; --dur:0.9s; --del:0.1s"/>
+          <line x1="40" y1="322" x2="40" y2="338" class="tick draw" style="--len:16; --dur:.3s; --del:0.9s"/>
+          <line x1="420" y1="322" x2="420" y2="338" class="tick draw" style="--len:16; --dur:.3s; --del:0.9s"/>
+
+          <!-- roof cross-section -->
+          <path d="M60 330 L230 120 L400 330" class="roof-outline draw" style="--len:520; --dur:1.4s; --del:0.3s" fill="none"/>
+          <path d="M60 330 L400 330" class="roof-outline draw" style="--len:340; --dur:0.6s; --del:1.6s" fill="none"/>
+
+          <!-- ridge point marker -->
+          <circle cx="230" cy="120" r="4" class="node draw-fade" style="--del:1.9s"/>
+
+          <!-- pitch angle arc -->
+          <path d="M230 160 A40 40 0 0 1 262 138" class="angle-arc draw" style="--len:60; --dur:0.6s; --del:2.1s" fill="none"/>
+          <text x="272" y="150" class="diagram-label">27°</text>
+
+          <!-- rafters -->
+          <line x1="115" y1="278" x2="115" y2="330" class="member draw" style="--len:52; --dur:.4s; --del:1.5s"/>
+          <line x1="172" y1="225" x2="172" y2="330" class="member draw" style="--len:105; --dur:.4s; --del:1.6s"/>
+          <line x1="288" y1="225" x2="288" y2="330" class="member draw" style="--len:105; --dur:.4s; --del:1.7s"/>
+          <line x1="345" y1="278" x2="345" y2="330" class="member draw" style="--len:52; --dur:.4s; --del:1.8s"/>
+
+          <!-- callout labels -->
+          <line x1="230" y1="120" x2="230" y2="90" class="leader draw" style="--len:30; --dur:.3s; --del:2.3s"/>
+          <line x1="230" y1="90" x2="300" y2="90" class="leader draw" style="--len:70; --dur:.3s; --del:2.5s"/>
+          <text x="306" y="94" class="diagram-label diagram-label--fade" style="--del:2.7s">RIDGE</text>
+
+          <line x1="130" y1="250" x2="90" y2="250" class="leader draw" style="--len:40; --dur:.3s; --del:2.3s"/>
+          <line x1="90" y1="250" x2="90" y2="220" class="leader draw" style="--len:30; --dur:.3s; --del:2.5s"/>
+          <text x="20" y="216" class="diagram-label diagram-label--fade" style="--del:2.7s">RAFTER</text>
+
+          <text x="200" y="352" class="diagram-label diagram-label--fade" style="--del:2.9s">SPAN — 30'-0"</text>
+        </svg>
+        <p class="diagram-caption">DWG NO. LX-2024-118 · REV C</p>
+      </div>
+    </div>
+
+    <div class="data-strip reveal">
+      <div class="data-item">
+        <span class="data-num">130</span>
+        <span class="data-unit">MPH</span>
+        <span class="data-label">Wind uplift rated</span>
+      </div>
+      <div class="data-item">
+        <span class="data-num">12,400</span>
+        <span class="data-unit">+</span>
+        <span class="data-label">Roofs engineered</span>
+      </div>
+      <div class="data-item">
+        <span class="data-num">30</span>
+        <span class="data-unit">YR</span>
+        <span class="data-label">Structural warranty</span>
+      </div>
+      <div class="data-item">
+        <span class="data-num">4.9</span>
+        <span class="data-unit">/5</span>
+        <span class="data-label">704 field reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section capabilities" id="capabilities">
+    <div class="section-inner">
+      <p class="sheet-label">SHEET A-10 — CAPABILITIES</p>
+      <h2 class="section-title">Six roofing systems, one engineering process.</h2>
+
+      <div class="cap-grid">
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-101</span>
+          <h3>Asphalt Shingle Systems</h3>
+          <p>Architectural or 3-tab, fastened to manufacturer nailing pattern with ice-and-water shield at eaves and valleys.</p>
+          <ul class="cap-specs">
+            <li><span>Wind rating</span><strong>110–130 mph</strong></li>
+            <li><span>Warranty</span><strong>25–50 yr</strong></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-102</span>
+          <h3>Standing-Seam Metal</h3>
+          <p>Panels formed on site and mechanically seamed for a continuous, fastener-free weather surface.</p>
+          <ul class="cap-specs">
+            <li><span>Wind rating</span><strong>Up to 160 mph</strong></li>
+            <li><span>Warranty</span><strong>50 yr finish</strong></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-103</span>
+          <h3>Slate &amp; Composite Tile</h3>
+          <p>Natural slate or engineered composite, hung individually with corrosion-resistant copper fasteners.</p>
+          <ul class="cap-specs">
+            <li><span>Service life</span><strong>75–100 yr</strong></li>
+            <li><span>Load</span><strong>Structural review req'd</strong></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-104</span>
+          <h3>Low-Slope &amp; TPO Membrane</h3>
+          <p>Heat-welded single-ply membrane for additions, porches, and commercial low-slope decks.</p>
+          <ul class="cap-specs">
+            <li><span>Min. pitch</span><strong>1/4:12</strong></li>
+            <li><span>Warranty</span><strong>20 yr</strong></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-105</span>
+          <h3>Storm &amp; Wind Damage</h3>
+          <p>Emergency tarping within hours, documented for your insurer, then full repair once claims clear.</p>
+          <ul class="cap-specs">
+            <li><span>Response</span><strong>&lt; 6 hrs</strong></li>
+            <li><span>Coverage</span><strong>24/7 dispatch</strong></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-sheet">A-106</span>
+          <h3>Inspections &amp; Load Assessments</h3>
+          <p>A 40-point structural and weatherproofing survey with photos, moisture readings, and a written report.</p>
+          <ul class="cap-specs">
+            <li><span>Turnaround</span><strong>48 hrs</strong></li>
+            <li><span>Format</span><strong>PDF report</strong></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="section specs" id="specs">
+    <div class="blueprint-grid blueprint-grid--dark" aria-hidden="true"></div>
+    <div class="section-inner">
+      <p class="sheet-label sheet-label--light">SHEET A-20 — SPEC SHEET</p>
+      <h2 class="section-title section-title--light">Why the paperwork matters as much as the shingles.</h2>
+
+      <div class="spec-table">
+        <div class="spec-row">
+          <span class="spec-key">01</span>
+          <span class="spec-name">Fastening pattern</span>
+          <span class="spec-value">Manufacturer spec, 6-nail per shingle in wind zones</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">02</span>
+          <span class="spec-name">Deck inspection</span>
+          <span class="spec-value">Full sheathing check before any material touches the roof</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">03</span>
+          <span class="spec-name">Ventilation ratio</span>
+          <span class="spec-value">Calculated to 1:150 attic-to-vent, not assumed</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">04</span>
+          <span class="spec-name">Flashing detail</span>
+          <span class="spec-value">Step + counter flashing at every wall and penetration</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">05</span>
+          <span class="spec-name">Documentation</span>
+          <span class="spec-value">Photo log at every phase, handed over at closeout</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">06</span>
+          <span class="spec-name">Warranty registration</span>
+          <span class="spec-value">Filed with manufacturer within 5 business days</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILD SEQUENCE -->
+  <section class="section sequence" id="sequence">
+    <div class="section-inner">
+      <p class="sheet-label">SHEET A-30 — BUILD SEQUENCE</p>
+      <h2 class="section-title">A drawing is built in layers. So is a roof.</h2>
+      <p class="sequence-intro">Every set of construction drawings stacks layers — structure, then systems, then finish. We install the same way, each layer covering and protecting the one underneath.</p>
+
+      <div class="layer-stack" id="layerStack">
+        <button class="layer-toggle is-active" data-layer="1">
+          <span class="layer-index">Layer 01</span>
+          <span class="layer-name">Site Survey &amp; Load Calc</span>
+        </button>
+        <div class="layer-panel is-active" data-panel="1">
+          <p>We measure pitch, span, and wind exposure, then check attic ventilation and deck condition from inside before ever pricing material.</p>
+        </div>
+
+        <button class="layer-toggle" data-layer="2">
+          <span class="layer-index">Layer 02</span>
+          <span class="layer-name">Tear-off &amp; Deck Inspection</span>
+        </button>
+        <div class="layer-panel" data-panel="2">
+          <p>Old roofing comes off down to the sheathing. Soft or rotted decking is itemized and replaced before anything new goes back on.</p>
+        </div>
+
+        <button class="layer-toggle" data-layer="3">
+          <span class="layer-index">Layer 03</span>
+          <span class="layer-name">Underlayment &amp; Flashing</span>
+        </button>
+        <div class="layer-panel" data-panel="3">
+          <p>Ice-and-water shield at eaves and valleys, synthetic underlayment across the field, new flashing at every wall, vent, and chimney.</p>
+        </div>
+
+        <button class="layer-toggle" data-layer="4">
+          <span class="layer-index">Layer 04</span>
+          <span class="layer-name">Roofing System Install</span>
+        </button>
+        <div class="layer-panel" data-panel="4">
+          <p>Shingles, panels, or tile go on to code and manufacturer spec, fastened to the pattern your wind zone requires.</p>
+        </div>
+
+        <button class="layer-toggle" data-layer="5">
+          <span class="layer-index">Layer 05</span>
+          <span class="layer-name">Final Inspection &amp; Uplift Check</span>
+        </button>
+        <div class="layer-panel" data-panel="5">
+          <p>A magnetic nail sweep, a fastening spot-check, and your warranty paperwork — filed, not just handed over.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section-inner">
+      <p class="sheet-label">SHEET A-40 — PROJECTS</p>
+      <h2 class="section-title">Recent drawings, built.</h2>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-swatch project-swatch--1"></div>
+          <div class="project-meta">
+            <h3>Ashworth Ridge Residence</h3>
+            <div class="project-tags"><span>Standing-seam metal</span><span>8/12 pitch</span><span>160 mph</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-swatch project-swatch--2"></div>
+          <div class="project-meta">
+            <h3>Millbrook Farmhouse</h3>
+            <div class="project-tags"><span>Architectural shingle</span><span>6/12 pitch</span><span>130 mph</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-swatch project-swatch--3"></div>
+          <div class="project-meta">
+            <h3>Cedar Falls Chapel</h3>
+            <div class="project-tags"><span>Natural slate</span><span>10/12 pitch</span><span>110 mph</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-swatch project-swatch--4"></div>
+          <div class="project-meta">
+            <h3>Harlow St. Commercial Row</h3>
+            <div class="project-tags"><span>TPO membrane</span><span>1/4:12 pitch</span><span>3 units</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS / FIELD NOTES -->
+  <section class="section reviews" id="reviews">
+    <div class="section-inner">
+      <p class="sheet-label">SHEET A-50 — FIELD NOTES</p>
+      <h2 class="section-title">Notes from the punch list.</h2>
+
+      <div class="notes-grid">
+        <article class="note-card reveal">
+          <p class="note-meta">FIELD NOTE / MILLBROOK</p>
+          <p class="note-text">They found soft decking our last roofer never flagged, itemized it before touching a shingle, and the invoice matched the quote exactly.</p>
+          <p class="note-by">— Dana R.</p>
+        </article>
+        <article class="note-card reveal">
+          <p class="note-meta">FIELD NOTE / ASHWORTH RIDGE</p>
+          <p class="note-text">Asked for the actual wind-uplift numbers for our pitch and elevation, not a generic figure. Got a one-page spec sheet before we signed anything.</p>
+          <p class="note-by">— Marcus T.</p>
+        </article>
+        <article class="note-card reveal">
+          <p class="note-meta">FIELD NOTE / CEDAR FALLS</p>
+          <p class="note-text">Storm hit at 9pm, tarp crew was on the roof before midnight, and the inspection report was ready for our adjuster the next morning.</p>
+          <p class="note-by">— Priya K.</p>
+        </article>
+        <article class="note-card reveal">
+          <p class="note-meta">FIELD NOTE / HARLOW ST.</p>
+          <p class="note-text">Commercial membrane job, three units, done on schedule with a photo log for every layer. No surprises on closeout.</p>
+          <p class="note-by">— Owen B.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="blueprint-grid blueprint-grid--dark" aria-hidden="true"></div>
+    <div class="section-inner contact-inner">
+      <div class="contact-copy">
+        <p class="sheet-label sheet-label--light">SHEET A-60 — CONTACT</p>
+        <h2 class="section-title section-title--light">Send the specs. We'll send a plan.</h2>
+        <p class="contact-sub">A project lead reviews every request and calls back within one business day — sooner for storm damage.</p>
+
+        <ul class="contact-list">
+          <li><span>Call / text</span><a href="tel:+12176163045">(217) 616-3045</a></li>
+          <li><span>Email</span><a href="mailto:pamkjonse3939@gmail.com">pamkjonse3939@gmail.com</a></li>
+          <li><span>Service area</span><span>Ashworth County &amp; surrounding townships</span></li>
+          <li><span>Dispatch</span><span>Mon–Sat 7a–6p · Storm line 24/7</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="field-error">Required</span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            <span class="field-error">Required</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field-error">Enter a valid email</span>
+        </div>
+        <div class="field">
+          <label for="system">System of interest</label>
+          <select id="system" name="system" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Asphalt shingle</option>
+            <option>Standing-seam metal</option>
+            <option>Slate / composite tile</option>
+            <option>Low-slope membrane</option>
+            <option>Storm repair</option>
+            <option>Inspection only</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project notes</label>
+          <textarea id="message" name="message" rows="3" placeholder="Roof age, visible damage, timeline — anything helps."></textarea>
+        </div>
+        <button type="submit" class="btn btn-orange btn-lg btn-block">Submit for review</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <p>© <span id="year"></span> Luxerenova Roofing &amp; Engineering. License #RC-88213 · Fully insured &amp; bonded.</p>
+      <p class="footer-dwg">DWG SET LX-2024 · ALL SHEETS CURRENT</p>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
